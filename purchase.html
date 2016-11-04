@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="style.css" type="text/css" rel="stylesheet" />
+<title>Purchase</title>
+</head>
+<body>
+
+	<h2>Widget Purchase</h2>
+
+	<form action="./receipt.php" method="post" class="all">
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; First Name
+		&nbsp;<input type="text" name="firstName" pattern="[A-Za-z]*" required /><br />
+		<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Last
+		Name &nbsp;<input type="text" name="lastName" pattern="[A-Za-z]*"
+			required /><br /> <br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Phone &nbsp;<input type="text" name="phoneNumber"
+			pattern="^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" required /><br />
+		<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		City &nbsp;<input type="text" name="city" pattern="[A-Za-z]*" required><br />
+		<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		State &nbsp;&nbsp;<select name="state" class="dropdownlist">
+			<option value="AZ">Arizona</option>
+			<option value="CA">California</option>
+			<option value="WA">Washington</option>
+		</select><br /> <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		ZIP &nbsp;<input type="text" name="zip" pattern="[0-9]{5}" size="5"
+			maxlength="5" required><br /> <br />
+
+		<div class="sizes">
+			<fieldset>
+				<legend>Size</legend>
+				<input type="radio" name="size" value="small" required /> Small
+				$2.00<br /> <input type="radio" name="size" value="medium" required />
+				Medium $2.65<br /> <input type="radio" name="size" value="large"
+					required /> Large $2.99<br />
+			</fieldset>
+		</div>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="number" name="quantity" min="1" max="5" required><br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Quantity(1..5)<br /> <br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="submit" class="buttom" value="Continue" /><br /> <br />
+	</form>
+
+	<h2>Benlong Huang</h2>
+
+</body>
+</html>
